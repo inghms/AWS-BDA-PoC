@@ -1,4 +1,4 @@
-# AWS BDA --> MVP (Producto Minimo Viable)
+# AWS Bedrock Data Automation BDA --> MVP (Producto Minimo Viable)
 
 Repositorio SDD (Spec-Driven Development) para desarrollar, validar y desplegar el MVP hibrido **BDA + SPA** .
 
