@@ -1,6 +1,6 @@
 # AWS BDA-PoC
 
-Repositorio SDD (Spec-Driven Development) para desarrollar, validar y desplegar el MVP hibrido **BDA + SPA** de Costa Atlantica (`Proy-CostaAtlantica`).
+Repositorio SDD (Spec-Driven Development) para desarrollar, validar y desplegar el MVP hibrido **BDA + SPA** .
 
 ## Proposito
 
