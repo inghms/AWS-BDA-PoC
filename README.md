@@ -1,10 +1,10 @@
-# AWS BDA-PoC
+# AWS BDA --> MVP (Producto Minimo Viable)
 
 Repositorio SDD (Spec-Driven Development) para desarrollar, validar y desplegar el MVP hibrido **BDA + SPA** .
 
 ## Proposito
 
-Implementar la PoC para carga controlada de Excel, conversion XLS -> PDF, extraccion con Amazon Bedrock Data Automation (BDA), persistencia de JSON en S3, normalizacion hacia Aurora PostgreSQL Serverless v2 y operacion funcional mediante una SPA.
+Implementar el MVP para carga controlada de Excel, conversion XLS -> PDF, extraccion con Amazon Bedrock Data Automation (BDA), persistencia de JSON en S3, normalizacion hacia Aurora PostgreSQL Serverless v2 y operacion funcional mediante una SPA.
 
 El flujo tecnico objetivo conserva el patron base:
 
@@ -85,7 +85,7 @@ Definida como IaC con AWS SAM en `infrastructure/template.yaml`.
 - Python 3.12
 - Node.js 20 LTS
 - Git
-- Perfil AWS SSO: `bigcheese_admin_ca`
+- Perfil AWS SSO: `admin_ca`
 - Cuenta AWS con permisos para S3, Lambda, Step Functions, EventBridge, API Gateway, Aurora, CloudFront, IAM, KMS, Secrets Manager, SNS y CloudWatch.
 
 ## Configuracion inicial (PowerShell)
@@ -97,10 +97,10 @@ winget install Python.Python.3.12
 winget install OpenJS.NodeJS.LTS
 winget install Git.Git
 
-aws configure sso --profile bigcheese_admin_ca
-aws sts get-caller-identity --profile bigcheese_admin_ca
+aws configure sso --profile admin_ca
+aws sts get-caller-identity --profile admin_ca
 
-$env:AWS_PROFILE="bigcheese_admin_ca"
+$env:AWS_PROFILE="admin_ca"
 $env:AWS_REGION="us-east-1"
 $env:ENVIRONMENT="dev"
 ```
